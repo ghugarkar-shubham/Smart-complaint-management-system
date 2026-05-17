@@ -6,6 +6,11 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * User entity representing a system user (either USER or ADMIN role).
+ * Email is the primary identifier for authentication.
+ * Mobile number is optional for backward compatibility.
+ */
 @Entity
 @Table(name = "users")
 public class User {
@@ -25,6 +30,9 @@ public class User {
   @Enumerated(EnumType.STRING)
   @Column(nullable = false)
   private Role role = Role.USER;
+
+  @Column(name = "email_verified", nullable = false)
+  private boolean emailVerified = false;
 
   @Column(nullable = false, updatable = false)
   private LocalDateTime createdAt;
@@ -75,6 +83,14 @@ public class User {
 
   public void setRole(Role role) {
     this.role = role;
+  }
+
+  public boolean isEmailVerified() {
+    return emailVerified;
+  }
+
+  public void setEmailVerified(boolean emailVerified) {
+    this.emailVerified = emailVerified;
   }
 
   public LocalDateTime getCreatedAt() {

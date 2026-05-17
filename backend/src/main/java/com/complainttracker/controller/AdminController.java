@@ -2,6 +2,7 @@ package com.complainttracker.controller;
 
 import com.complainttracker.dto.ComplaintRequests.StatusUpdateRequest;
 import com.complainttracker.dto.Responses.ComplaintResponse;
+import com.complainttracker.dto.Responses.ComplaintStatusUpdateResponse;
 import com.complainttracker.dto.Responses.SummaryResponse;
 import com.complainttracker.service.AdminService;
 import com.complainttracker.service.ComplaintService;
@@ -29,7 +30,7 @@ public class AdminController {
   }
 
   @PutMapping("/complaints/{id}/status")
-  public ResponseEntity<ComplaintResponse> updateStatus(@PathVariable @NonNull Long id, @Valid @RequestBody StatusUpdateRequest request) {
+  public ResponseEntity<ComplaintStatusUpdateResponse> updateStatus(@PathVariable @NonNull Long id, @Valid @RequestBody StatusUpdateRequest request) {
     return ResponseEntity.ok(complaintService.updateStatus(id, request));
   }
 
