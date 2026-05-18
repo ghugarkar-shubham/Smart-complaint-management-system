@@ -5,6 +5,7 @@ com\complainttracker\dto\AuthRequests.class
 com\complainttracker\repository\UserRepository.class
 com\complainttracker\ComplaintTrackerApplication.class
 com\complainttracker\controller\AdminController.class
+com\complainttracker\exception\SmsNotificationException.class
 com\complainttracker\dto\Responses$ApiResponse.class
 com\complainttracker\repository\EmailOtpVerificationRepository.class
 com\complainttracker\config\DataSeeder.class

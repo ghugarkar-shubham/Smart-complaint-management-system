@@ -10,6 +10,7 @@ C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src
 C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\exception\BadRequestException.java
 C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\exception\GlobalExceptionHandler.java
 C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\exception\ResourceNotFoundException.java
+C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\exception\SmsNotificationException.java
 C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\exception\UnauthorizedException.java
 C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\model\Complaint.java
 C:\Users\Admin\OneDrive\Desktop\WebProject\Online Complaint Register\backend\src\main\java\com\complainttracker\model\ComplaintStatus.java
